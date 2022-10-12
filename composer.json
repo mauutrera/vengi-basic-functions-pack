@@ -1,0 +1,17 @@
+{
+    "name": "vengi/basic-functions-pack",
+    "description": "A Basic Functions Pack.",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "files": [
+            "src/csrf_token.php",
+            "src/common_functions.php"
+        ]
+    },
+    "authors": [
+        {
+            "name": "Mauricio Utrera Molina"
+        }
+    ]
+}
