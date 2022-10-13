@@ -4,6 +4,9 @@
     "type": "library",
     "license": "MIT",
     "autoload": {
+        "psr-4": {
+            "Vengi\\Basic\\": "src/"
+        },
         "files": [
             "src/csrf_token.php",
             "src/common_functions.php",
