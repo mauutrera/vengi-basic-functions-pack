@@ -10,7 +10,8 @@
         "files": [
             "src/csrf_token.php",
             "src/common_functions.php",
-            "src/common_framework_functions.php"
+            "src/common_framework_functions.php",
+            "src/redirect.php"
         ]
     },
     "authors": [

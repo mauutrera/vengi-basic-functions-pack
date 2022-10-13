@@ -7,7 +7,7 @@
  |------------------------------------------------------------------------
  */
 
-function hostPath($path){
+function hostPath($path = null){
     $http = 'http';
     
     if (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] == 'on') {
@@ -16,7 +16,17 @@ function hostPath($path){
         $http = 'https';
     }
 
-    return $http.'://'.$_SERVER['HTTP_HOST'].'/'.$path;
+    $slash = '' ;
+    
+    if ($path !== null) {
+        $slash = '/';
+        
+        if ($path[0] === '/') {
+            $slash = '';
+        }
+    }
+
+    return $http.'://'.$_SERVER['HTTP_HOST'].$slash.$path;
 }
 
 /*
